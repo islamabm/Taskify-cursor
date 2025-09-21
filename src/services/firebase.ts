@@ -1,7 +1,7 @@
 // firebase.ts
 import { initializeApp } from 'firebase/app';
 import { getMessaging, getToken as getFirebaseToken, onMessage, Messaging } from 'firebase/messaging';
-
+//
 // Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyBvKNlkGAGixD9J-JUCVbHY3dcYQ-H6J5w",
