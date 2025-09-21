@@ -1,0 +1,15 @@
+.color-animation {
+    animation: colorChange 10s infinite;
+}
+
+
+.btns-loader {
+    width: 30px;
+    height: 30px;
+    border: 5px dotted #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+}

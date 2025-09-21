@@ -1,0 +1,33 @@
+.blurred-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    /* Ensures nothing spills outside */
+}
+
+.blurred-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.5;
+    /* Visible initially, adjust as needed */
+    transition: pulse 250ms ease-in-out;
+    /* Smooth transition for the fade */
+    background-color: var(--text-color);
+}
+
+.blurred-img.loaded::before {
+    opacity: 0;
+    /* Fully transparent when loaded */
+}
+
+.blurred-img img {
+    transition: pulse 250ms ease-in-out;
+    opacity: 0;
+    /* Start fully transparent */
+}
+
+.blurred-img.loaded img {
+    opacity: 1;
+    /* Fully opaque when loaded */
+}

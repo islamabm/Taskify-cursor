@@ -1,0 +1,14 @@
+.my-custom-table {
+
+    table {
+
+        border-collapse: collapse;
+        width: 100%;
+    }
+}
+
+.my-custom-table table th,
+.my-custom-table table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
